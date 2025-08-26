@@ -8,18 +8,12 @@ body {
 }
 
 .content {
-<<<<<<< HEAD
     /* Ocupa toda a largura da tela */
     width: 100%; 
-=======
-    width: 100vw;
-    height: 100vh;
->>>>>>> 627a1ca6aebeb81b88429225fe0a5754e6a58a33
     padding: 1rem;
     background-color: #fff;
 }
 
-<<<<<<< HEAD
 /* Em telas maiores (desktops) */
 @media screen and (min-width: 992px) {
     .content {
@@ -30,13 +24,5 @@ body {
         border-radius: 1rem;
         /* Garante que a altura se ajuste ao conteúdo */
         height: auto; 
-=======
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
->>>>>>> 627a1ca6aebeb81b88429225fe0a5754e6a58a33
     }
 }
