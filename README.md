@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📱 Pokédex Interativa com Efeito 3D  
 ![Pokédex JS](https://placehold.co/800x400/77c850/FFFFFF?text=Pok%C3%A9dex+JS)
 
@@ -65,4 +64,4 @@ Ainda há **muito espaço para evoluir e melhorar**, mas ele já mostra o quanto
 ---
 =======
 # Trilha JS Developer - Pokedex
->>>>>>> 627a1ca6aebeb81b88429225fe0a5754e6a58a33
+

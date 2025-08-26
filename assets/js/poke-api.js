@@ -11,7 +11,6 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
 
     pokemon.types = types
     pokemon.type = type
-<<<<<<< HEAD
     pokemon.rawTypes = pokeDetail.types;
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
@@ -26,11 +25,6 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
         pokemon.stats[statSlot.stat.name.replace('-', '')] = statSlot.base_stat;
     });
 
-=======
-
-    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
-
->>>>>>> 627a1ca6aebeb81b88429225fe0a5754e6a58a33
     return pokemon
 }
 
@@ -40,11 +34,7 @@ pokeApi.getPokemonDetail = (pokemon) => {
         .then(convertPokeApiDetailToPokemon)
 }
 
-<<<<<<< HEAD
 pokeApi.getPokemons = (offset = 0, limit = 10) => {
-=======
-pokeApi.getPokemons = (offset = 0, limit = 5) => {
->>>>>>> 627a1ca6aebeb81b88429225fe0a5754e6a58a33
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
     return fetch(url)
@@ -54,7 +44,6 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
 }
-<<<<<<< HEAD
 
 pokeApi.fetchTypeAdvantages = async (rawTypes) => {
     const advantages = new Set();
@@ -70,5 +59,3 @@ pokeApi.fetchTypeAdvantages = async (rawTypes) => {
 
     return Array.from(advantages);
 }
-=======
->>>>>>> 627a1ca6aebeb81b88429225fe0a5754e6a58a33
