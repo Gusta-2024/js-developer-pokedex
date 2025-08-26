@@ -1,0 +1,28 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    /* Ocupa toda a largura da tela */
+    width: 100%; 
+    padding: 1rem;
+    background-color: #fff;
+}
+
+/* Em telas maiores (desktops) */
+@media screen and (min-width: 992px) {
+    .content {
+        /* Define uma largura máxima para não ficar esticado demais */
+        max-width: 992px; 
+        /* Centraliza o conteúdo na tela */
+        margin: 1rem auto; 
+        border-radius: 1rem;
+        /* Garante que a altura se ajuste ao conteúdo */
+        height: auto; 
+    }
+}
